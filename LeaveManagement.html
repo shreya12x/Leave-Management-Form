@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <title>FORM</title>
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="viewport" conent="width=device-width, initial-scale=1.0"> 
+        
+        <style>
+            body {
+                background-color: powderblue;
+                padding: 60px;
+            }
+
+            /*div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                margin: 100px auto 0px auto;
+            }*/
+
+            hr{
+                min-height: 2px;
+                background: #332f2f;
+            }
+            div.register{
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                font-size: 25px;
+            }
+
+            h2{ 
+                text-align: center;
+                padding: 22px;
+                font-family: sans-serif;
+                margin: 0;
+            }
+            
+            form#register{
+                margin: 30px 40px 0px 60px;
+            }
+
+            label{
+                font-family: sans-serif;
+                font-size: 24px;
+                
+            }
+            select{
+                width: 310px;
+                height: 40px;
+                position: absolute;
+                left: 350px;
+                border: 1px solid rgb(211, 203, 203);
+                border-radius: 3px;
+                padding: 4px;
+                box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+            }
+            option{
+                font-family: sans-serif;
+                font-size: 24px;
+                padding: 4px;
+            }
+
+            input#name{
+                width: 300px;
+                height: 30px;
+                position: absolute;
+                left: 350px;
+                border: 1px solid rgb(211, 203, 203);
+                border-radius: 3px;
+                padding: 4px;
+                box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+            }
+
+            div.register1{
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 25px;
+            }
+
+            form#register1{
+               margin: 30px 40px 0px 60px;
+           }
+
+           span#reason1,span#reason3,span#reason5{
+               height: 15px;
+               padding: 12px;
+           }
+
+           input#reason2,input#reason4,input#reason6{
+                position: absolute;
+                left: 420px;
+           }
+
+           span#reason2,span#reason4,span#reason6{
+                position: absolute;
+                left: 460px;
+                height: 12px;
+           }
+        
+           input#date{
+                position: absolute;
+                left: 320px;
+                width: 220px;
+                height: 30px;
+                border: 1px solid rgb(211, 203, 203);
+                border-radius: 3px;  
+                box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+           }
+
+            input#submit {
+                background-color: #2dc432;
+                font-family: sans-serif;
+                font-size: 24px;
+
+                font-weight: 500;
+                width: 300px;
+                color: white;
+                padding: 15px 20px;
+                margin: 8px 0;
+                border-radius: 13px;
+                cursor: pointer;
+                box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+    
+                /*position: absolute;
+                left: 340px;*/
+            }
+
+            input#submit:hover {
+                background-color: #339e38;
+            }
+
+            label,span,h2{
+                text-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+                
+            }
+
+            h1{
+                color: blue;
+                height: 150px;
+                text-align: center;
+                height: 100px;
+                font-size: 56px;
+                font-weight: 50px;
+                padding-top: 10px;
+                margin-bottom: 25px;
+                background-color: #28c5bd;
+            } 
+            p{
+                color: red;
+                text-align: center;
+                font-size: 22px;
+                font-family: sans-serif;
+                
+            }
+
+            textarea {
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                font-size: 22px;
+                resize: none;
+            }
+
+        </style>
+
+    </head>
+    <body >
+        <h1>Employee Leave Request Form</h1>
+        <p>Please fill in the form with all the required information.</p>
+        <br><hr><br>
+        
+        <div class="register">
+        <h2>Employee Information</h2>
+        <form id="register">
+            <label>Employee Name</label>
+               
+                <input type="text" name="Firstname" id="name" placeholder="Enter Your Name">&nbsp;
+                
+                <br><br>
+
+            <label>Employee ID</label>
+            
+            <input type="number" name="empid" id="name" placeholder="Ex: 12345">
+            <br><br>
+
+            <label>Department</label>
+            
+            <select id="name">
+                <option >Production</option>
+                <option >Marketing</option>
+                <option >Sales</option>
+                <option >Customer Service</option>
+            </select>
+            <br><br>
+
+            <label>Email ID</label>
+            
+            <input type="email" name="email" id="name" placeholder="Email">
+            <br><br>
+
+            <label>Mobile Number</label>
+            
+            <input type="number" name="mobile" id="name" placeholder="+91 9997775555">
+            <br><br>
+
+            <label>Supervisor Name</label>
+           
+            <input type="text" name="Sname" placeholder="Name" id="name">
+            <br><br>
+        </form>
+        </div><br>
+            
+        <hr><br>
+            
+        <div class="register1">
+        <h2>Leave Details</h2>
+        <form id="register1">
+
+            <label>Reason for Leave</label>
+            <br>&nbsp;&nbsp;&nbsp;
+
+            <input type="radio" id="reason1" name="reason">&nbsp;
+            <label for="reason1"><span id="reason1">Vacation</span></label>
+
+            <input type="radio" id="reason2" name="reason">&nbsp;
+            <label for="reason2"><span id="reason2"> Sick Leave</span></label><br>&nbsp;&nbsp;&nbsp;
+
+            <input type="radio" id="reason3" name="reason">&nbsp;
+            <label for="reason3"></label><span id="reason3">Marriage Leave</span></label>
+
+            <input type="radio" id="reason4" name="reason" >&nbsp;
+            <label for="reason4"><span id="reason4"> Doctor Appointment</span></label><br>&nbsp;&nbsp;&nbsp;
+
+            <input type="radio" id="reason5" name="reason">&nbsp;
+            <label for="reason5"><span id="reason5">Maternity Leave</span></label>
+
+            <input type="radio" id="reason6" name="reason" value="Other">
+            <label for="reason6"><span id="reason6">Other</span></label><br><br>
+
+            <label class="Date">Leave Date</label>
+            <input type="date" placeholder="dd-mm-yyyy" id="date">
+            <br>
+            <label class="Date">Return Date</label>
+            <input type="date" placeholder="dd-mm-yyyy" id="date" ><br><br>
+
+            <label>Additional Information</label>
+            <br>
+            <textarea cols="30" rows="5" placeholder="Reason in detail..." type="text" name="message"></textarea>
+            <br><br>
+
+            <input type="submit" name="Submit" id="submit" value="Send Request">
+           <br><br>
+
+        </form>
+        </div>
+    </body>
+</html>
